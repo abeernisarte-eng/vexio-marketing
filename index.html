@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VEXIO — Performance Marketing. Engineered for Growth.</title>
+    <meta
+      name="description"
+      content="VEXIO helps brands scale with premium affiliate networks and in-house AI-powered media buying."
+    />
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="vexio.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="VEXIO home">
+        <img src="logo-5.svg" alt="VEXIO" width="143" height="32" />
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#model">Model</a>
+        <a href="#capabilities">Capabilities</a>
+        <a class="nav-cta" href="https://vexio.co/" target="_blank" rel="noopener">Book a demo</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Hero">
+        <div class="hero-media" aria-hidden="true">
+          <img src="sv.jpg" alt="" class="hero-image" />
+          <div class="hero-veil"></div>
+        </div>
+        <div class="hero-content">
+          <p class="brand-mark">VEXIO</p>
+          <h1>Performance marketing.<br />Engineered for growth.</h1>
+          <p class="lede">
+            Scale with a hybrid model of premium affiliate networks and
+            in-house AI-powered media buying.
+          </p>
+          <div class="cta-group">
+            <a class="btn btn-primary" href="https://vexio.co/" target="_blank" rel="noopener">Book a demo</a>
+            <a class="btn btn-ghost" href="#model">See how it works</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section model" id="model">
+        <div class="section-inner">
+          <h2>Hybrid growth, built for precision.</h2>
+          <p class="section-copy">
+            We combine a vetted affiliate network with proprietary media buying
+            so every campaign is trackable, compliant, and ready to scale.
+          </p>
+          <div class="model-visual">
+            <img
+              src="c2-img-1.webp"
+              alt="Operators reviewing campaign performance together"
+              width="1200"
+              height="800"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section capabilities" id="capabilities">
+        <div class="section-inner">
+          <h2>What we run for you</h2>
+          <p class="section-copy">
+            End-to-end performance infrastructure — from supply to spend to
+            fraud defense.
+          </p>
+          <ul class="capability-list">
+            <li>
+              <strong>Affiliate network excellence</strong>
+              <span>Invite-only publishers with strict quality controls across fintech, apps, and commerce.</span>
+            </li>
+            <li>
+              <strong>In-house media buying</strong>
+              <span>AI-assisted campaigns across Meta, Google, native, email, push, and more.</span>
+            </li>
+            <li>
+              <strong>Fraud prevention &amp; compliance</strong>
+              <span>Real-time monitoring so every lead is genuine and campaign-safe.</span>
+            </li>
+            <li>
+              <strong>Dedicated account management</strong>
+              <span>Hands-on partners available around the clock to optimize and scale.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section close" id="contact">
+        <div class="section-inner close-inner">
+          <img
+            class="close-image"
+            src="pro-d2.webp"
+            alt="Partners reviewing strategy documents"
+            width="900"
+            height="600"
+          />
+          <div class="close-copy">
+            <h2>Ready to scale with precision?</h2>
+            <p>Join brands running multi-geo, high-intent acquisition with VEXIO.</p>
+            <a class="btn btn-primary" href="https://vexio.co/" target="_blank" rel="noopener">Book a demo</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> VEXIO. Performance marketing engineered for growth.</p>
+      <a href="https://vexio.co/" target="_blank" rel="noopener">vexio.co</a>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const reveal = document.querySelectorAll(".section, .hero-content");
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add("is-visible");
+          });
+        },
+        { threshold: 0.12 }
+      );
+      reveal.forEach((el) => io.observe(el));
+      requestAnimationFrame(() => {
+        document.querySelector(".hero-content")?.classList.add("is-visible");
+        document.querySelector(".hero-image")?.classList.add("is-alive");
+      });
+    </script>
+  </body>
+</html>
