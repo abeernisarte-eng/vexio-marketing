@@ -1354,6 +1354,15 @@ if (window.matchMedia("(min-width: 1400px)").matches) {
 // hero-3-trigger
 if (window.matchMedia("(min-width: 768px)").matches) { 
 
+	// Center the flower before pinning (saved page styles lock it to the left)
+	gsap.set(".agn-hero-3-animation", {
+		left: "50%",
+		xPercent: -50,
+		top: "8%",
+		scale: 0.9,
+		transformOrigin: "50% 50%",
+	});
+	gsap.set(".agn-hero-3-animation-shape", { transformOrigin: "50% 50%" });
 
 	gsap.to(".agn-hero-3-bg", {
 		scrollTrigger: {
@@ -1392,6 +1401,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 		scale: 10,
 		opacity: 0,
 		duration: 1,
+		transformOrigin: "50% 50%",
 	})
 	
 	var agnH3shapeTriggerVideo = gsap.timeline({
