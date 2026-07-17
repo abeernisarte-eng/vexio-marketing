@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Ethereal Demo';
+    src: url('../fonts/EtherealDemo-Black.woff2') format('woff2'),
+        url('../fonts/EtherealDemo-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ethereal Demo';
+    src: url('../fonts/EtherealDemo-Bold.woff2') format('woff2'),
+        url('../fonts/EtherealDemo-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ethereal Demo';
+    src: url('../fonts/EtherealDemo-ExtraBold.woff2') format('woff2'),
+        url('../fonts/EtherealDemo-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ethereal Demo';
+    src: url('../fonts/EtherealDemo-SemiBold.woff2') format('woff2'),
+        url('../fonts/EtherealDemo-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ethereal Demo';
+    src: url('../fonts/EtherealDemo-Regular.woff2') format('woff2'),
+        url('../fonts/EtherealDemo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ethereal Demo';
+    src: url('../fonts/EtherealDemo-ExtraLight.woff2') format('woff2'),
+        url('../fonts/EtherealDemo-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ethereal Demo';
+    src: url('../fonts/EtherealDemo-Light.woff2') format('woff2'),
+        url('../fonts/EtherealDemo-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ethereal Demo';
+    src: url('../fonts/EtherealDemo-Thin.woff2') format('woff2'),
+        url('../fonts/EtherealDemo-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ethereal Demo';
+    src: url('../fonts/EtherealDemo-Medium.woff2') format('woff2'),
+        url('../fonts/EtherealDemo-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

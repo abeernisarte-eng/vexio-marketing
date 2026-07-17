@@ -1,0 +1,49 @@
+
+/* 
+    agn-faqs-9-start
+*/
+.agn-faqs-9-sec-title {
+    text-align: center;
+    margin-bottom: 54px;
+  }
+  .agn-faqs-9-accordion {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 870px;
+  }
+  .agn-faqs-9-accordion .agn-accordion-item {
+    border-bottom: 1px solid #DFE1E5;
+  }
+  .agn-faqs-9-accordion .agn-accordion-item .item-title {
+    font-size: 23px;
+  }
+  @media (max-width: 767px) {
+    .agn-faqs-9-accordion .agn-accordion-item .item-title {
+      font-size: 20px;
+    }
+  }
+  .agn-faqs-9-accordion .agn-accordion-item .item-title .icon {
+    color: var(--agn-clr-pr-9);
+    font-size: 20px;
+  }
+  .agn-faqs-9-accordion .agn-accordion-item .item-title:hover {
+    color: var(--agn-clr-pr-9);
+  }
+  .agn-faqs-9-accordion .agn-accordion-item .item-title:is(:not(.collapsed)) {
+    color: var(--agn-clr-pr-9);
+  }
+  .agn-faqs-9-accordion .agn-accordion-item .item-body {
+    max-width: 100%;
+  }
+  .agn-faqs-9-accordion .agn-accordion-item .item-body p {
+    font-size: 17px;
+    opacity: 88%;
+  }
+  .agn-faqs-9-content .title {
+    font-size: 32px;
+    margin-bottom: 28px;
+  }
+  
+  /* 
+      agn-faqs-9-end
+  */

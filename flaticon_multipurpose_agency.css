@@ -1,0 +1,323 @@
+
+
+@font-face {
+    font-family: "flaticon_multipurpose_agency";
+    src: url("../fonts/flaticon_multipurpose_agency.woff2?dcad8fc9e77f37b1203391fe81d41ca6") format("woff2"),
+url("../fonts/flaticon_multipurpose_agency.woff?dcad8fc9e77f37b1203391fe81d41ca6") format("woff"),
+url("../fonts/flaticon_multipurpose_agency.eot?dcad8fc9e77f37b1203391fe81d41ca6#iefix") format("embedded-opentype"),
+url("../fonts/flaticon_multipurpose_agency.ttf?dcad8fc9e77f37b1203391fe81d41ca6") format("truetype"),
+url("../fonts/flaticon_multipurpose_agency.svg?dcad8fc9e77f37b1203391fe81d41ca6#flaticon_multipurpose_agency") format("svg")
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_multipurpose_agency !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-right-up:before {
+    content: "\f101";
+}
+.flaticon-right-arrow:before {
+    content: "\f102";
+}
+.flaticon-right-up-1:before {
+    content: "\f103";
+}
+.flaticon-award-symbol:before {
+    content: "\f104";
+}
+.flaticon-trophy:before {
+    content: "\f105";
+}
+.flaticon-quote:before {
+    content: "\f106";
+}
+.flaticon-rewards:before {
+    content: "\f107";
+}
+.flaticon-help-center:before {
+    content: "\f108";
+}
+.flaticon-software-as-a-service:before {
+    content: "\f109";
+}
+.flaticon-add:before {
+    content: "\f10a";
+}
+.flaticon-customer-care:before {
+    content: "\f10b";
+}
+.flaticon-contract:before {
+    content: "\f10c";
+}
+.flaticon-irregular:before {
+    content: "\f10d";
+}
+.flaticon-geometric:before {
+    content: "\f10e";
+}
+.flaticon-3d:before {
+    content: "\f10f";
+}
+.flaticon-time:before {
+    content: "\f110";
+}
+.flaticon-right-down:before {
+    content: "\f111";
+}
+.flaticon-star:before {
+    content: "\f112";
+}
+.flaticon-abstract-shape:before {
+    content: "\f113";
+}
+.flaticon-triangle:before {
+    content: "\f114";
+}
+.flaticon-isometric:before {
+    content: "\f115";
+}
+.flaticon-market-research:before {
+    content: "\f116";
+}
+.flaticon-idea:before {
+    content: "\f117";
+}
+.flaticon-info:before {
+    content: "\f118";
+}
+.flaticon-rocket:before {
+    content: "\f119";
+}
+.flaticon-calendar:before {
+    content: "\f11a";
+}
+.flaticon-user:before {
+    content: "\f11b";
+}
+.flaticon-send:before {
+    content: "\f11c";
+}
+.flaticon-badge:before {
+    content: "\f11d";
+}
+.flaticon-square-with-rounded-sides:before {
+    content: "\f11e";
+}
+.flaticon-flower:before {
+    content: "\f11f";
+}
+.flaticon-round:before {
+    content: "\f120";
+}
+.flaticon-play-button-arrowhead:before {
+    content: "\f121";
+}
+.flaticon-shape-design:before {
+    content: "\f122";
+}
+.flaticon-shape-design-1:before {
+    content: "\f123";
+}
+.flaticon-shape-design-2:before {
+    content: "\f124";
+}
+.flaticon-black-star-silhouette:before {
+    content: "\f125";
+}
+.flaticon-innovative:before {
+    content: "\f126";
+}
+.flaticon-team-management:before {
+    content: "\f127";
+}
+.flaticon-team-management-1:before {
+    content: "\f128";
+}
+.flaticon-team-member:before {
+    content: "\f129";
+}
+.flaticon-24-hours-support:before {
+    content: "\f12a";
+}
+.flaticon-awards:before {
+    content: "\f12b";
+}
+.flaticon-winner-award:before {
+    content: "\f12c";
+}
+.flaticon-award-trophy:before {
+    content: "\f12d";
+}
+.flaticon-arrow-right:before {
+    content: "\f12e";
+}
+.flaticon-arrow:before {
+    content: "\f12f";
+}
+.flaticon-consultant:before {
+    content: "\f130";
+}
+.flaticon-financial-analysis-1:before {
+    content: "\f131";
+}
+.flaticon-play:before {
+    content: "\f132";
+}
+.flaticon-plus-sign:before {
+    content: "\f133";
+}
+.flaticon-minus:before {
+    content: "\f134";
+}
+.flaticon-right-chevron:before {
+    content: "\f135";
+}
+.flaticon-arrow-pointing-to-down:before {
+    content: "\f136";
+}
+.flaticon-left-arrow:before {
+    content: "\f137";
+}
+.flaticon-ux-design:before {
+    content: "\f138";
+}
+.flaticon-pen-tool:before {
+    content: "\f139";
+}
+.flaticon-logo:before {
+    content: "\f13a";
+}
+.flaticon-graphic:before {
+    content: "\f13b";
+}
+.flaticon-digital-art:before {
+    content: "\f13c";
+}
+.flaticon-vector-design:before {
+    content: "\f13d";
+}
+.flaticon-vector:before {
+    content: "\f13e";
+}
+.flaticon-development:before {
+    content: "\f13f";
+}
+.flaticon-3d-movie:before {
+    content: "\f140";
+}
+.flaticon-3d-modeling:before {
+    content: "\f141";
+}
+.flaticon-earth:before {
+    content: "\f142";
+}
+.flaticon-cyber-security:before {
+    content: "\f143";
+}
+.flaticon-cyber-security-1:before {
+    content: "\f144";
+}
+.flaticon-service:before {
+    content: "\f145";
+}
+.flaticon-blockchain:before {
+    content: "\f146";
+}
+.flaticon-migration:before {
+    content: "\f147";
+}
+.flaticon-migrating:before {
+    content: "\f148";
+}
+.flaticon-cyber-security-2:before {
+    content: "\f149";
+}
+.flaticon-coding:before {
+    content: "\f14a";
+}
+.flaticon-custom:before {
+    content: "\f14b";
+}
+.flaticon-cyber-security-3:before {
+    content: "\f14c";
+}
+.flaticon-breach:before {
+    content: "\f14d";
+}
+.flaticon-coding-1:before {
+    content: "\f14e";
+}
+.flaticon-system-administration:before {
+    content: "\f14f";
+}
+.flaticon-management:before {
+    content: "\f150";
+}
+.flaticon-blockchain-1:before {
+    content: "\f151";
+}
+.flaticon-right:before {
+    content: "\f152";
+}
+.flaticon-placeholder:before {
+    content: "\f153";
+}
+.flaticon-money:before {
+    content: "\f154";
+}
+.flaticon-money-bag:before {
+    content: "\f155";
+}
+.flaticon-loan:before {
+    content: "\f156";
+}
+.flaticon-modern-house:before {
+    content: "\f157";
+}
+.flaticon-building:before {
+    content: "\f158";
+}
+.flaticon-bed:before {
+    content: "\f159";
+}
+.flaticon-washbasin:before {
+    content: "\f15a";
+}
+.flaticon-bathtub:before {
+    content: "\f15b";
+}
+.flaticon-double-bed:before {
+    content: "\f15c";
+}
+.flaticon-bed-1:before {
+    content: "\f15d";
+}
+.flaticon-beds:before {
+    content: "\f15e";
+}
+.flaticon-rulers:before {
+    content: "\f15f";
+}
+.flaticon-social:before {
+    content: "\f160";
+}
+.flaticon-pen-tool-1:before {
+    content: "\f161";
+}
+.flaticon-team-work-icon:before {
+    content: "\f162";
+}
+.flaticon-collaboration:before {
+    content: "\f163";
+}
+.flaticon-solution:before {
+    content: "\f164";
+}
+
