@@ -1156,29 +1156,36 @@ agnCounter2
 })
 
 // services-3-card
-if (window.matchMedia("(min-width: 768px)").matches) { 
+if (window.matchMedia("(min-width: 768px)").matches) {
+	// Same animation as live demo; keep tilt under GSAP so transforms don't fight CSS
+	gsap.set(".agn-services-3-card-single", {
+		rotation: -20,
+		transformOrigin: "50% 50%",
+		force3D: true,
+	});
+
 	gsap.to(".agn-services-3-card", {
 		scrollTrigger: {
 			trigger: ".agn-services-3-card-pin",
-			start: "top 15%", 
-			end: "bottom bottom", 
-			pin: ".agn-services-3-card", 
+			start: "top 15%",
+			end: "bottom bottom",
+			pin: ".agn-services-3-card",
 			pinSpacing: true,
 			markers: false
 		}
 	});
-	
+
 	gsap.to(".agn-services-3-title", {
 		scrollTrigger: {
 			trigger: ".agn-services-3-card-pin",
-			start: "top 7%", 
-			end: "bottom bottom", 
-			pin: ".agn-services-3-title", 
+			start: "top 7%",
+			end: "bottom bottom",
+			pin: ".agn-services-3-title",
 			pinSpacing: true,
 			markers: false
 		}
 	});
-	
+
 	var agnServices3card = gsap.timeline({
 		scrollTrigger: {
 			trigger: ".agn-services-3-card",
@@ -1186,20 +1193,30 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 			markers: false,
 		},
 	})
+
+	// Live demo uses ".pin-spacer"; scope to the spacer wrapping the services card
+	// so hero pin-spacers don't steal the scrub timeline
+	var servicesCardEl = document.querySelector(".agn-services-3-card");
+	var servicesPinTrigger = (servicesCardEl && servicesCardEl.parentElement && servicesCardEl.parentElement.classList.contains("pin-spacer"))
+		? servicesCardEl.parentElement
+		: ".agn-services-3-card-pin";
+
 	var agnServices3cardTrigger = gsap.timeline({
 		scrollTrigger: {
-			trigger: ".agn-services-3-card-pin",
-			start: "top 0%",
+			trigger: servicesPinTrigger,
+			start: "top 15%",
+			end: "bottom bottom",
 			toggleActions: "play reverse play reverse",
 			scrub: 1,
 			markers: false,
 		},
 	})
-	
+
 	agnServices3card
 	.from(".agn-services-3-card-single", {
 		yPercent: 100,
 		opacity: 0,
+		rotation: -20,
 		stagger: {
 			each: .2,
 			duration: .5,
@@ -1211,7 +1228,8 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 		yPercent: -150,
 		rotation: 20,
 		duration: 1,
-		stagger: -1, 
+		stagger: -1,
+		ease: "none",
 	})
 }
 
@@ -1318,7 +1336,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 var agnTeam3 = gsap.timeline({
 	scrollTrigger: {
 		trigger: ".agn-team-3-wrap",
-		start: "top 90%",
+		start: "top 85%",
 		toggleActions: "play reverse play reverse",
 		markers: false,
 	},
@@ -1333,21 +1351,21 @@ agnTeam3
 })
 
 // counter-3
-if (window.matchMedia("(min-width: 1400px)").matches) {
+if (window.matchMedia("(min-width: 768px)").matches) {
 	var agnCounter3 = gsap.timeline({
 		scrollTrigger: {
 			trigger: ".agn-about-3-counter",
-			start: "top 80%",
+			start: "top 85%",
 			toggleActions: "play reverse play reverse",
 			markers: false,
 		},
 	})
 	agnCounter3
 	.from(".agn-about-3-counter-single", {
-		yPercent: -200,
-		ease: "ease3",
-		duration: .5,
-		stagger: .2,
+		yPercent: 130,
+		ease: "expo.out",
+		duration: 1.1,
+		stagger: .12,
 	})
 }
 
