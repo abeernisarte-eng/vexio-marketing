@@ -1188,7 +1188,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 	})
 	var agnServices3cardTrigger = gsap.timeline({
 		scrollTrigger: {
-			trigger: ".pin-spacer",
+			trigger: ".agn-services-3-card-pin",
 			start: "top 0%",
 			toggleActions: "play reverse play reverse",
 			scrub: 1,
