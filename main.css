@@ -7394,14 +7394,11 @@ input:focus::placeholder, textarea:focus::placeholder {
   padding: 48px 40px;
   padding-bottom: 40px;
   background: var(--agn-clr-white-1);
-  /* rotation controlled by GSAP to match live demo animation */
-  transform-origin: center center;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+  transform: rotate(-20deg);
 }
 @media (max-width: 767px) {
   .agn-services-3-card-single {
-    transform: none;
+    transform: unset;
     max-width: 100%;
     margin-bottom: 30px;
   }
@@ -7457,28 +7454,21 @@ input:focus::placeholder, textarea:focus::placeholder {
     position: unset;
   }
 }
-.agn-services-3-card-single:nth-child(1) {
-  z-index: 1;
-}
 .agn-services-3-card-single:nth-child(2) {
   top: 10px;
   left: 20px;
-  z-index: 2;
 }
 .agn-services-3-card-single:nth-child(3) {
   top: 20px;
   left: 40px;
-  z-index: 3;
 }
 .agn-services-3-card-single:nth-child(4) {
   top: 30px;
   left: 60px;
-  z-index: 4;
 }
 .agn-services-3-card-single:nth-child(5) {
   top: 40px;
   left: 80px;
-  z-index: 5;
 }
 .agn-services-3-card-pin {
   height: 500vh;

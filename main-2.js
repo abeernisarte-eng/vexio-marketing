@@ -1156,36 +1156,29 @@ agnCounter2
 })
 
 // services-3-card
-if (window.matchMedia("(min-width: 768px)").matches) {
-	// Same animation as live demo; keep tilt under GSAP so transforms don't fight CSS
-	gsap.set(".agn-services-3-card-single", {
-		rotation: -20,
-		transformOrigin: "50% 50%",
-		force3D: true,
-	});
-
+if (window.matchMedia("(min-width: 768px)").matches) { 
 	gsap.to(".agn-services-3-card", {
 		scrollTrigger: {
 			trigger: ".agn-services-3-card-pin",
-			start: "top 15%",
-			end: "bottom bottom",
-			pin: ".agn-services-3-card",
+			start: "top 15%", 
+			end: "bottom bottom", 
+			pin: ".agn-services-3-card", 
 			pinSpacing: true,
 			markers: false
 		}
 	});
-
+	
 	gsap.to(".agn-services-3-title", {
 		scrollTrigger: {
 			trigger: ".agn-services-3-card-pin",
-			start: "top 7%",
-			end: "bottom bottom",
-			pin: ".agn-services-3-title",
+			start: "top 7%", 
+			end: "bottom bottom", 
+			pin: ".agn-services-3-title", 
 			pinSpacing: true,
 			markers: false
 		}
 	});
-
+	
 	var agnServices3card = gsap.timeline({
 		scrollTrigger: {
 			trigger: ".agn-services-3-card",
@@ -1193,30 +1186,24 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 			markers: false,
 		},
 	})
-
-	// Live demo uses ".pin-spacer"; scope to the spacer wrapping the services card
-	// so hero pin-spacers don't steal the scrub timeline
-	var servicesCardEl = document.querySelector(".agn-services-3-card");
-	var servicesPinTrigger = (servicesCardEl && servicesCardEl.parentElement && servicesCardEl.parentElement.classList.contains("pin-spacer"))
-		? servicesCardEl.parentElement
-		: ".agn-services-3-card-pin";
-
+	// Same as live demo (.pin-spacer), but bind to the services card spacer only
 	var agnServices3cardTrigger = gsap.timeline({
 		scrollTrigger: {
-			trigger: servicesPinTrigger,
-			start: "top 15%",
-			end: "bottom bottom",
+			trigger: function () {
+				var card = document.querySelector(".agn-services-3-card");
+				return (card && card.parentElement) ? card.parentElement : ".agn-services-3-card-pin";
+			},
+			start: "top 0%",
 			toggleActions: "play reverse play reverse",
 			scrub: 1,
 			markers: false,
 		},
 	})
-
+	
 	agnServices3card
 	.from(".agn-services-3-card-single", {
 		yPercent: 100,
 		opacity: 0,
-		rotation: -20,
 		stagger: {
 			each: .2,
 			duration: .5,
@@ -1228,8 +1215,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 		yPercent: -150,
 		rotation: 20,
 		duration: 1,
-		stagger: -1,
-		ease: "none",
+		stagger: -1, 
 	})
 }
 
