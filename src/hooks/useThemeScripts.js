@@ -46,6 +46,28 @@ function loadScript(src) {
   })
 }
 
+function applyDataBackgrounds() {
+  if (!window.jQuery) return
+  window.jQuery('[data-background]').each(function applyBg() {
+    const bg = window.jQuery(this).attr('data-background')
+    if (bg) window.jQuery(this).css('background-image', `url(${bg})`)
+  })
+}
+
+function forceCompletePreloader() {
+  const preloader = document.querySelector('.agn-loader-wrap')
+  if (!preloader) return
+  preloader.classList.add('preloaded')
+  preloader.style.display = 'none'
+  preloader.style.pointerEvents = 'none'
+}
+
+function refreshScrollTriggers() {
+  if (window.ScrollTrigger?.refresh) {
+    window.ScrollTrigger.refresh()
+  }
+}
+
 async function loadThemeScripts() {
   for (const src of THEME_SCRIPTS) {
     await loadScript(src)
@@ -61,13 +83,17 @@ async function loadThemeScripts() {
     window.jQuery(window).trigger('load')
   }
 
-  // data-background helpers (also in theme JS, but safe to re-apply)
-  if (window.jQuery) {
-    window.jQuery('[data-background]').each(function applyBg() {
-      const bg = window.jQuery(this).attr('data-background')
-      if (bg) window.jQuery(this).css('background-image', `url(${bg})`)
-    })
-  }
+  applyDataBackgrounds()
+
+  // Images / sticky layouts settle after paint — refresh ScrollTrigger
+  window.requestAnimationFrame(() => {
+    refreshScrollTriggers()
+    window.setTimeout(refreshScrollTriggers, 500)
+    window.setTimeout(refreshScrollTriggers, 1500)
+  })
+
+  // Safety: never leave the page covered if preloader/GSAP chain stalls
+  window.setTimeout(forceCompletePreloader, 4000)
 }
 
 /**
@@ -91,7 +117,10 @@ export function useThemeScripts() {
         return
       }
       loadThemeScripts().catch((err) => {
-        if (!cancelled) console.error(err)
+        if (!cancelled) {
+          console.error(err)
+          forceCompletePreloader()
+        }
       })
     }
     raf = window.requestAnimationFrame(tick)
